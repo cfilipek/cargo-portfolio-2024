@@ -1,0 +1,14 @@
+.project {
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 75vh;
+}
+
+.project .project-img {
+    max-width: 300px;
+    width: 100%;
+}

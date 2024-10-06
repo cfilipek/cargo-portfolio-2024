@@ -1,0 +1,10 @@
+.about {
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 75vh;
+}
+
+.about .about-container {
+    margin-top: 100px;
+}

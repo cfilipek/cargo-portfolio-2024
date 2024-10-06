@@ -1,0 +1,17 @@
+/* Footer.css */
+.footer {
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding */
+    position: relative; /* Adjust if needed */
+  }
+  
+  .footer a {
+    color: #fff; /* White link color */
+    text-decoration: underline; /* Underline for links */
+  }
+  
+  .footer a:hover {
+    color: #ccc; /* Lighter color on hover */
+  }

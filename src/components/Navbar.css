@@ -1,0 +1,94 @@
+/* Navbar.css */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    max-width: -webkit-fill-available;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-container a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Styles for nav links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .nav-links a:hover, .navbar-container a:hover {
+    color: #007BFF;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 2px 0;
+    transition: transform 0.3s;
+  }
+  
+  /* Active state for the hamburger lines */
+  .line.open:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .line.open:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+  }
+  .line.open:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 60px; /* Adjust based on navbar height */
+      left: 0;
+      background-color: white; /* Background for mobile menu */
+      width: 100%;
+      flex-direction: column; /* Stack links vertically */
+      display: none; /* Hidden by default */
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show menu when active */
+    }
+  
+    .hamburger {
+      display: flex; /* Show hamburger on mobile */
+    }
+  }
+  

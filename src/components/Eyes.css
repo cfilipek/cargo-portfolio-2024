@@ -1,0 +1,38 @@
+/* Eyes.css */
+.eyes {
+    position: absolute; /* Positioned absolutely in the header */
+    top: 20px; /* Adjust as necessary */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center adjustment */
+    display: flex;
+  }
+  
+  .eye {
+    width: 80px; /* Adjust size */
+    height: 36px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 10px; /* Space between eyes */
+    overflow: hidden; /* Hide pupil overflow */
+  }
+  
+  .pupil {
+    width: 20px; /* Adjust pupil size */
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s; /* Smooth movement */
+  }
+  
+
+  @media (max-width: 768px) {
+    .eyes {
+        display: none;
+    }
+   }

@@ -1,0 +1,40 @@
+.home {
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.home .folder-icon, .home .trash-icon {
+    max-width: 120px;
+}
+
+.home .folder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    cursor: pointer;
+}
+
+.home .folder-container p {
+    margin-top: 0px;
+    color: white; /* Text color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Drop shadow */
+}
+
+.home .icons-container a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+   .home .icons-container {
+       display: grid;
+       grid-template-columns: 2fr 2fr;
+       grid-gap: 20px;
+   }
+
+   .home .folder-icon, .home .trash-icon {
+        max-width: 100%;
+    }
+  }
